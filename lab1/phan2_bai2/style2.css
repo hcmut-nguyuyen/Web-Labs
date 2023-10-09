@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: brown;
+}
+
+h1.shadow {
+    color: brow;
+    text-shadow: 2px 3px 0px blue;
+}
+
+p::first-letter {
+    font-size: 300%;
+}
+
+.abc {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.def {
+    font-style: italic;
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+a.shadow {
+    text-shadow: 2px 2px 3px #000;
+    font-weight: bold;
+    color: cadetblue;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+table th,
+table td {
+    border: 1px solid #bbb;
+}
+
+table td{
+    padding: 5px 10px;
+    text-align: center;
+}
