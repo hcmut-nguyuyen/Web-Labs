@@ -35,20 +35,19 @@ nav span {
     display: flex;
 }
 
-/* .columns {
-    padding: 10px;
-} */
-
 .columns.column-1 {
-    padding: 10px;
     width: 520px;
     background-color: rgb(153, 204, 153);
 }
 
 .columns.column-2 {
-    padding: 10px;
     width: 230px;
     background-color: rgb(153, 153, 204);
+}
+
+.column-1 .content,
+.column-2 .content {
+    padding: 10px;
 }
 
 footer {
