@@ -1,6 +1,127 @@
 body {
     background-image: url("images/bg-body.png");
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-color: rgb(232, 247, 249);
+    width: 700px;
+    margin: auto;
+}
+
+.all-container {
+    width: 700px;
+    background-color: #fff;
+}
+
+header {
+    position: relative;
+    margin: 0px;
+}
+
+header img {
+    display: block;
+}
+
+header h1 {
+    color: rgb(170, 170, 170);
+    font-style: italic;
+    position: absolute;
+    top: 20%;
+    padding-left: 30px;
+}
+
+.menu {
+    position: relative;
+    margin: 0px;
+}
+
+.menu img {
+    display: block;
+}
+
+.menu nav {
+    position: absolute;
+    top: 20%;
+    padding-left: 30px;
+}
+
+.menu nav span {
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.menu nav a {
+    color: rgb(255, 255, 255);
+}
+
+.menu nav a:link {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+footer {
+    position: relative;
+}
+
+footer p {
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    padding-left: 20px;
+}
+
+.column-1 {
+    width: 500px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.content p {
+    text-align: justify;
+}
+
+h2 {
+    color: rgb(194, 206, 77);
+    margin-bottom: 0px;
+}
+
+.date {
+    color: rgb(170, 170, 170);
+    font-size: 80%;
+    margin: 0px;
+}
+
+.comment {
+    color: rgb(134, 205, 224);
+}
+
+.column-2 {
+    width: 180px;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.feed-head {
+    background-image: url('images/bg-feed.gif');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.column-2 nav {
+    text-align: left;
+}
+
+.column-2 nav p {
+    margin: 0px;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.column-2 nav a {
+    color: #000;
+    text-decoration: none;
 }
