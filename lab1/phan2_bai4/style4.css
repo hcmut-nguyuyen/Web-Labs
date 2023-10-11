@@ -88,3 +88,7 @@ footer {
 .padding-10 {
     padding: 10px;
 }
+
+p {
+    text-align: justify;
+}
