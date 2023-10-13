@@ -1,0 +1,312 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767.5px) {
+    .col-sm-1 {
+        width: 8.33%;
+    }
+
+    .col-sm-2 {
+        width: 16.66%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.33%;
+    }
+
+    .col-sm-5 {
+        width: 41.66%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.33%;
+    }
+
+    .col-sm-8 {
+        width: 66.66%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.33%;
+    }
+
+    .col-sm-11 {
+        width: 91.66%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .d-none{
+        display: none;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #444;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    color: #fff;
+    background-color: #444;
+}
+
+header>.content {
+    margin: 10px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+header .title {
+    text-align: center;
+}
+
+header nav {
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+header nav span {
+    margin: 0px 10px;
+}
+
+header .search>div {
+    /* margin: 5px; */
+    width: 100%;
+    height: 100%;
+}
+
+header input {
+    width: 100%;
+    height: 80%;
+}
+
+header a {
+    text-decoration: none;
+    color: aqua;
+}
+
+main {
+    background-color: blue;
+    display: flex;
+    flex-flow: wrap;
+}
+
+main>.left {
+    background-color: rgb(0, 100, 255);
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+}
+
+main>.left>div>.content {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main>.left>div h3 {
+    text-align: center;
+    background-color: blue;
+}
+
+main>.left>div ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: aqua;
+}
+
+main>.left>div ul>li:hover {
+    background-color: rgb(0, 200, 255);
+}
+
+main>.mid {
+    background-color: rgb(0, 200, 255);
+}
+
+main>.mid>.content {
+    margin: 20px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+main>.mid>.content>.product-list {
+    display: flex;
+    flex-flow: wrap;
+}
+
+main>.mid>.content>.product-list>.container>.product {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    background-color: rgb(0, 255, 255);
+}
+
+main>.mid>.content>.product-list>.container>.product>.content {
+    margin: 10px;
+    text-align: center;
+}
+
+main>.mid>.content>.product-list>.container>.product>.content>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+main>.mid>.content>.pages {
+    text-align: right;
+}
+
+main>.right {
+    background-color: rgb(87, 87, 188);
+}
+
+main>.right>.ads {
+    margin: auto;
+}
+
+main>.right>.ads img{
+    object-fit: cover;
+}
+
+footer {
+    background-color: #444;
+}
+
+footer>.content {
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+}
+
+footer span {
+    margin: 0px 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aqua;
+}
