@@ -1,4 +1,4 @@
-var history = 0
+var resultHistory = 0
 function checkNumber(num) {
     if (typeof num != "string") {
         return false
@@ -107,13 +107,13 @@ function swapValueById(first, second) {
     document.getElementById(second).value = tem
 }
 function saveValue(from, to) {
-    ++history
+    ++resultHistory
     let location = document.getElementById(to)
     let div = document.createElement('div')
 
     let output = document.createElement('output')
     output.classList.add('form-control')
-    output.id = "result" + history
+    output.id = ["result",resultHistory.toString()].join("")
     output.value = document.getElementById(from).value
     div.appendChild(output)
 
@@ -125,7 +125,7 @@ function saveValue(from, to) {
     button.classList.add('btn')
     button.classList.add('btn-primary')
     button.innerHTML = 'To A'
-    let tem = "moveById('result" + history + "', 'numberA')"
+    let tem = "moveById('result" + resultHistory + "', 'numberA')"
     button.setAttribute('onclick', tem)
 
     div.appendChild(button)
@@ -136,7 +136,7 @@ function saveValue(from, to) {
     button.classList.add('btn')
     button.classList.add('btn-primary')
     button.innerHTML = 'To B'
-    tem = "moveById('result" + history + "', 'numberB')"
+    tem = "moveById('result" + resultHistory + "', 'numberB')"
     button.setAttribute('onclick', tem)
     // button.setAttribute('onclick', "moveById('result', 'numberB')")
 
