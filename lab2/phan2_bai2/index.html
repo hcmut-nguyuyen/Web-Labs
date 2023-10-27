@@ -12,15 +12,72 @@
 </head>
 
 <body>
-  <div class="full-screen">
+  <div class="full-screen bg-light">
     <header>
-      <div class="container-fluid">
+      <div class="container-fluid bg-primary">
         <div class="col-12 text-center">
           <h1>Calculator</h1>
         </div>
       </div>
     </header>
     <main>
+      <div class="container-fluid">
+        <form class="row justify-content-center">
+          <div class="col-4">
+            <div class="form-group text-center">
+              <label for="numberA">A</label>
+              <input type="text" class="form-control" name="numberA" id="numberA" placeholder="A"
+                aria-describedby="numberAHelp" value="0">
+              <div id="numberAHelp" class="form-text text-danger for-help"></div>
+            </div>
+            <div class="row justify-content-center">
+              <button type="button" class="col-3 btn btn-primary"
+                onclick="factorialById('numberA','result')">A!</button>
+              <button type="button" class="col-3 btn btn-primary"
+                onclick="subNumberById('numberA','numberB','result')">A - B</button>
+              <button type="button" class="col-3 btn btn-primary"
+                onclick="divideNumberById('numberA','numberB','result')">A / B</button>
+            </div>
+          </div>
+          <div class="form-group col-4 text-center">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <button type="button" class="col-6 col-md-4 col-lg-3 btn btn-primary"
+                  onclick="addNumberById('numberA','numberB','result')">A +
+                  B</button>
+              </div>
+              <div class="row justify-content-center">
+                <button type="button" class="col-6 col-md-4 col-lg-3 btn btn-primary"
+                  onclick="multipleNumberById('numberA','numberB','result')">A * B</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group text-center">
+              <label for="numberB">B</label>
+              <input type="text" class="form-control" name="numberB" id="numberB" placeholder="B"
+                aria-describedby="numberBHelp" value="0">
+              <div id="numberBHelp" class="form-text text-danger for-help"></div>
+            </div>
+            <div class="row justify-content-center">
+              <button type="button" class="col-3 btn btn-primary"
+                onclick="factorialById('numberB','result')">B!</button>
+              <button type="button" class="col-3 btn btn-primary"
+                onclick="subNumberById('numberB','numberA','result')">B - A</button>
+              <button type="button" class="col-3 btn btn-primary"
+                onclick="divideNumberById('numberB','numberA','result')">B / A</button>
+            </div>
+          </div>
+          <div class="col-6 text-center">
+            <h2>Result</h2>
+            <output class="form-control" name="result" id="result">0</output>
+            <div class="row justify-content-center">
+              <button type="button" class="col-3 btn btn-primary" onclick="moveById('result','numberA')">To A</button>
+              <button type="button" class="col-3 btn btn-primary" onclick="moveById('result','numberB')">To B</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
   </div>
 </body>
