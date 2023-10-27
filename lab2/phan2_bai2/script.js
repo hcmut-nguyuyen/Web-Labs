@@ -25,7 +25,7 @@ function isInt(num) {
 function checkNumberByIdAndNotice(id) {
     if (checkNumberById(id) == false) {
         let tem = id + "Help"
-        document.getElementById(tem).innerHTML = "Fault"
+        document.getElementById(tem).innerHTML = "Not a number"
         return false
     } else return true
 }
@@ -109,16 +109,19 @@ function swapValueById(first, second) {
 function saveValue(from, to) {
     ++resultHistory
     let location = document.getElementById(to)
+    let divAll = document.createElement('div')
+    divAll.classList.add('margin-top-10')
     let div = document.createElement('div')
 
     let output = document.createElement('output')
     output.classList.add('form-control')
     output.id = ["result",resultHistory.toString()].join("")
     output.value = document.getElementById(from).value
-    div.appendChild(output)
+    divAll.appendChild(output)
 
     div.classList.add('row')
-    div.classList.add('justify-content-center')
+    div.classList.add('justify-content-evenly')
+    div.classList.add('margin-top-10')
     let button = document.createElement('button')
     button.type = 'button'
     button.classList.add('col-3')
@@ -142,5 +145,6 @@ function saveValue(from, to) {
 
 
     div.appendChild(button)
-    location.prepend(div)
+    divAll.appendChild(div)
+    location.prepend(divAll)
 }
