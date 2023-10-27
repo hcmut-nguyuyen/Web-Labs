@@ -12,22 +12,87 @@
 </head>
 
 <body>
-  <div class="full-screen bg-light">
-    <header>
-      <div class="container-fluid bg-primary">
+  <div class="full-screen">
+    <header class=" bg-primary">
+      <div class="container-fluid">
         <div class="col-12 text-center">
           <h1>Calculator</h1>
         </div>
       </div>
     </header>
     <main>
-      <div class="container-fluid">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-6 bg-info">
+            <form>
+              <div class="form-group text-center">
+                <h3><label for="numberA">A</label></h3>
+                <input type="text" class="form-control" name="numberA" id="numberA" placeholder="0"
+                  aria-describedby="numberAHelp">
+                <div id="numberAHelp" class="form-text text-danger for-help"></div>
+              </div>
+              <div class="form-group text-center">
+                <h3><label for="numberB">B</label></h3>
+                <input type="text" class="form-control" name="numberB" id="numberB" placeholder="0"
+                  aria-describedby="numberBHelp">
+                <div id="numberBHelp" class="form-text text-danger for-help"></div>
+              </div>
+              <div class="form-group text-center">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <button type="button" class="col-6 col-md-4 col-lg-3 btn btn-primary"
+                      onclick="swapValueById('numberA','numberB')">A &lt;-&gt; B</button>
+                  </div>
+                  <div class="row justify-content-center">
+                    <button type="button" class="col-6 col-md-4 col-lg-3 btn btn-primary"
+                      onclick="addNumberById('numberA','numberB','result')">A + B</button>
+                  </div>
+                  <div class="row justify-content-center">
+                    <button type="button" class="col-6 col-md-4 col-lg-3 btn btn-primary"
+                      onclick="subNumberById('numberA','numberB','result')">A - B</button>
+                  </div>
+                  <div class="row justify-content-center">
+                    <button type="button" class="col-6 col-md-4 col-lg-3 btn btn-primary"
+                      onclick="multipleNumberById('numberA','numberB','result')">A * B</button>
+                  </div>
+                  <div class="row justify-content-center">
+                    <button type="button" class="col-6 col-md-4 col-lg-3 btn btn-primary"
+                      onclick="divideNumberById('numberA','numberB','result')">A / B</button>
+                  </div>
+                  <div class="row justify-content-center">
+                    <button type="button" class="col-6 col-md-4 col-lg-3 btn btn-primary"
+                      onclick="factorialById('numberA','result')">A!</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-6 bg-light">
+            <div class="text-center">
+              <h2>Result</h2>
+              <output class="form-control" name="result" id="result">0</output>
+              <div class="row justify-content-center">
+                <button type="button" class="col-3 btn btn-primary" onclick="moveById('result','numberA')">To A</button>
+                <button type="button" class="col-3 btn btn-primary"
+                  onclick="saveValue('result','history')">Save</button>
+                <button type="button" class="col-3 btn btn-primary" onclick="moveById('result','numberB')">To B</button>
+              </div>
+            </div>
+            <hr>
+            <div class="text-center">
+              <h2>History</h2>
+              <div id="history"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container-fluid">
         <form class="row justify-content-center">
           <div class="col-4">
             <div class="form-group text-center">
               <label for="numberA">A</label>
-              <input type="text" class="form-control" name="numberA" id="numberA" placeholder="A"
-                aria-describedby="numberAHelp" value="0">
+              <input type="text" class="form-control" name="numberA" id="numberA" placeholder="0"
+                aria-describedby="numberAHelp">
               <div id="numberAHelp" class="form-text text-danger for-help"></div>
             </div>
             <div class="row justify-content-center">
@@ -55,8 +120,8 @@
           <div class="col-4">
             <div class="form-group text-center">
               <label for="numberB">B</label>
-              <input type="text" class="form-control" name="numberB" id="numberB" placeholder="B"
-                aria-describedby="numberBHelp" value="0">
+              <input type="text" class="form-control" name="numberB" id="numberB" placeholder="0"
+                aria-describedby="numberBHelp">
               <div id="numberBHelp" class="form-text text-danger for-help"></div>
             </div>
             <div class="row justify-content-center">
@@ -77,7 +142,7 @@
             </div>
           </div>
         </form>
-      </div>
+      </div> -->
     </main>
   </div>
 </body>

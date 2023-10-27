@@ -2,3 +2,15 @@
     min-width: 100vw;
     min-height: 100vh;
 }
+
+header {
+    height: 10vh;
+}
+
+header>div {
+    padding: 10px;
+}
+
+main {
+    height: 90vh;
+}
