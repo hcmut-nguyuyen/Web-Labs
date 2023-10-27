@@ -1,0 +1,9 @@
+.full-screen {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.no-padding-margin {
+    padding: 0px;
+    margin: 0px;
+}
